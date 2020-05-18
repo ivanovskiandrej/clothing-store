@@ -1,0 +1,154 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
+         "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>  
+<title>Skaptopara Clothing Store</title>
+   <meta http-equiv="Content-Type"
+           content="text/html;charset=utf-8" />
+
+<link href="css/style.css" rel="stylesheet" type="text/css"/>
+
+</head>
+
+<body>
+
+<div id="wrapper"> 
+  
+  <div id="header">
+  
+  <div class="banner_img">
+    </div>
+
+	</div>
+	
+	
+	
+	
+	<div class="navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+		<li><a href="blog.html">Blog</a></li>
+        <li><a href="products.html">Our Products</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+      </ul>
+    </div>
+  
+  <div class="right_side_bar"> 
+      
+      <div class="col_1">
+        <h1 style="color:black">Location</h1>
+        <div class="box">
+			We are located on the
+			Skaptopara campus at the American
+			University in Bulgaria. 
+        </div>
+      </div>
+	  
+      
+      <div class="col_1">
+        <h1 style="color:black">Contact</h1>
+        <div class="box">
+          <p>If you have any questions
+		  please shoot us an email 
+	  		<i>ani170@aubg.edu</i> </p>
+        </div>
+      </div>
+	  
+      <div class="col_1">
+        <h1 style="color:black">Partners</h1>
+        <div class="box">
+			We are proud to have established a partnership with world reknown brands, such as:
+			<br/>
+	    <img width="200" height="200" src="images/partners/levis.png" alt="Levis" />
+	    <img width="200" height="200" src="images/partners/calvinklein.gif" alt="Calvin Klein"/>
+	    <img width="200" height="200" src="images/partners/champion.png" alt = "Champion" />
+	    <img width="200" height="200" src="images/partners/timberland.png" alt="Timberland" />
+	    <img width="200" height="200" src="images/partners/tommyhilfiger.jpg" alt="Tommy Hilfiger" />
+		
+		
+        </div>
+      </div>
+      
+    </div>    
+  <div id="page_content">
+    <div class="left_section">
+      <div class="common_content">
+		  
+		  
+        
+    		<h1>Contact Us</h1>
+		  
+        
+
+        <h2>Request</h2>
+
+
+        <input id="firstname" type="text" placeholder="Enter Name" />
+
+
+        <input id="email" type="text" placeholder="Enter Email" />
+
+        <input id="message" type="text" placeholder="Enter Message" />
+
+  	  <button onclick="displayName()" >  Submit</button>
+
+	<br />
+	<br />
+	
+	<div id="messageSentDiv" style="display: none;"> 
+	
+	<p id="person"></p>
+	<br/>
+	<p>Your message has been sent. One of Skapopara Clothing Store's staff members will get in touch with your very soon and will be able to assist you. In the meantime, if you have any urgent questions, please don't hesitate to write to our founder at ani170@aubg.edu. Thank you for you patience!<br/><br/>
+		Sincerely yours,<br/>
+		The Skaptopara Clothing Store Team
+</p>
+	
+	</div>
+	
+	
+	<br/>
+	<br/>
+	
+  
+	    <img width="700" height="400" src="images/map.png" alt="Location"/>
+		
+		<br />
+		<br />
+		
+		<p>If you want to purchase our products, you can send us a request with your name and we will get in touch with you.
+			Also, you can visit us in our store which is located on the AUBG campus.</p>
+		
+      </div>
+    </div>
+	
+	<script type="text/javascript">
+	
+
+		
+		function displayName(){
+		
+			var name = document.getElementById("firstname").value;
+		
+		document.getElementById("person").innerHTML=name;
+		
+		var x = document.getElementById("messageSentDiv");
+		  if (x.style.display === "none") {
+		    x.style.display = "block";
+		  } else {
+		    x.style.display = "none";
+		  }
+		
+	}
+	
+		</script>
+    
+    
+  <div id="footer">Copyright &copy; 2019. Andrej Ivanovski - INF240 Website Development</div>
+</div>
+</div>
+
+</body></html>
